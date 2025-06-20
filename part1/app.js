@@ -1,5 +1,5 @@
 const express = require('express');
-const logger = require('morgan');
+const logger  = require('morgan');
 const cookieParser = require('cookie-parser');
 const searches = require('./routes/searches');
 const app = express();
