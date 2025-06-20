@@ -74,19 +74,13 @@
       <span style="font-family:'Papyrus', fantasy;"> of </span>
       <span style="font-family:'Arial', sans-serif;">the Day</span>
     </div>
-
-    <!-- No alt text provided -->
     <img :src="dogImage" />
-
     <button tabindex="0" @click="fetchDog">New Dog Picture</button>
-
     <div class="dog-name">Name: Max</div>
     <div class="owner-name" data-premium="true">Owner: alice123</div>
   </div>
-
   <script>
     const { createApp, ref, onMounted } = Vue;
-
     createApp({
       setup() {
         const dogImage = ref('');
@@ -101,7 +95,6 @@
           }
           randomizeLabels();
         }
-
         function randomizeLabels() {
           ['.title','.dog-name','.owner-name'].forEach(sel => {
             const el = document.querySelector(sel);
